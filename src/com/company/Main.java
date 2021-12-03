@@ -6,7 +6,7 @@ public class Main {
 
         int[] arr = new int[]{1, 2, 3};
         double[] arrDouble = new double[]{1.57, 7.654, 9.986};
-        int[] arrRand = {4, 5, 6};
+      //  int[] arrRand = {4, 5, 6};
 
         for (int i = 0; i < arr.length; i++) {
             if (i != arr.length - 1) {
@@ -19,11 +19,26 @@ public class Main {
                 System.out.print(arrDouble[i] + ",");
             } else System.out.println(arrDouble[i] + " ");
         }
-
+// Ex 3 rotation
         for (int i = arr.length -1 ; i >= 0; i--) {
             if (i != 0) {
                 System.out.print(arr[i] + ",");
             } else System.out.println(arr[i] + " ");
         }
+
+        for (int i = arrDouble.length -1 ; i >= 0; i--) {
+            if (i != 0) {
+                System.out.print(arrDouble[i] + ",");
+            } else System.out.println(arrDouble[i] + " ");
+        }
+
+//Ex 4 odd to even
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                System.out.print(arr[i] + ",");
+            } else System.out.println((arr[i] + 1) + " ");
+        }
+
+
     }
 }
